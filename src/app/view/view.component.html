@@ -1,0 +1,59 @@
+<div id=light>
+<div class="container" id=light style="text-align:center">
+ 
+    <div class="row" style="text-align:center"  >
+      <div class="col-md-4" *ngIf="singleinfo">
+        
+       
+          <div id=vlog class="panel panel-default "><br>
+              <div class="card" id=second style="width: 15rem;">
+                 
+                  <div class="card-body">
+                    <h5 class="card-title">
+                        
+                            Name : {{singleinfo.name}}<br>
+                        
+                          Aliases : {{singleinfo.aliases}}
+                          
+                          
+                      </h5>
+                    <p class="card-text">
+                      
+                        Region : {{singleinfo.region}}<br>
+                        Isbn : {{singleinfo.isbn}}<br>
+                    </p>
+
+                    <p class="card-rext">
+                            Country : {{singleinfo.country}}<br>
+                            Culture : {{singleinfo.culture}}<br>
+                            CoatofArms : {{singleinfo.coatOfArms}}<br>
+                    </p>   
+
+                    
+                    
+                    <div class="panel-footer"><br>
+                      <br/><br/><a [routerLink]="['/home']" class="btn btn-primary">back</a>
+                       
+                      </div>
+
+                  </div>
+                </div>
+  
+        <br/><br>
+      </div>
+  
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+  

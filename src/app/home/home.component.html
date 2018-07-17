@@ -1,0 +1,81 @@
+
+
+<div class="container-fluid" id=new style="text-align:center">
+    <div class="row" style="text-align:center">
+      <div class="col-md-12" style="font-size:22px">INFO </div>
+      <br><br><br><br>
+    </div>
+    <div class="row" style="text-align:center"  >
+  
+    
+      <div class="col-md-4"*ngFor="let log of edit1;let i=index">
+        
+       <div *ngIf="edit1">
+          <div id=vlog1 class="panel panel-default">
+              <div id=orange1 class="panel-heading">{{log.name}}</div><br>
+              <div class="panel-body">
+                 
+                  <p>Category : Book</p>
+              </div>
+              <div class="panel-footer"><br>
+            <br/><br/><a [routerLink]="['/view',log.url]" class="btn btn-primary">Read</a>
+              
+              </div>
+          
+  
+        <br/><br>
+      </div>
+  
+  </div>
+  
+  
+        
+  <div *ngIf="edit2">
+      <div id=vlog2 class="panel panel-default">
+          <div id=orange2 class="panel-heading"> {{edit2[i].name}}</div><br>
+          <div class="panel-body">
+              <p>Category : House</p>
+          </div>
+          <div class="panel-footer"><br>
+        <br/><br/><a [routerLink]="['/view',edit2[i].url]" class="btn btn-primary">Read</a>
+          
+          </div>
+    <br/><br>
+  </div>
+  
+  </div>
+  
+  
+  <div *ngIf="edit3">
+      <div id=vlog3 class="panel panel-default">
+          <div id=orange3 class="panel-heading"> {{edit3[i].aliases}}</div><br>
+          <div class="panel-body">
+              <p>Category : Character</p>
+          </div>
+          <div class="panel-footer"><br>
+         <br/><br/><a [routerLink]="['/view',edit3[i].url]" class="btn btn-primary">Read</a>
+          
+          </div>
+ 
+    <br/><br>
+  </div>
+  
+  </div>
+  
+    
+    </div>
+  
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
